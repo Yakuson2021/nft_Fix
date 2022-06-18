@@ -1,0 +1,388 @@
+/* ページ全体として使用するcssを上にまとめておく。ここから */
+
+body{
+  background: #96B2D7;
+}
+
+img{
+  width: 100%;
+}
+
+/* 横並びにしたい要素にd-flexを使う */
+.d-flex{
+  display: flex;
+}
+
+/* ページ全体のコンテンツ幅を決定する */
+.container{
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/* ページ全体として使用するcssを上にまとめておく。ここまで */
+
+.header_bg{
+  background: url('../img/main.png') no-repeat;/* no-repeatは背景画像を繰り返さない */
+  background-size: cover;/* 背景画像を要素いっぱいに広げる */
+  display: flex;
+  padding: 150px 0;
+  margin-bottom: 50px;
+  box-shadow: 0px 10px 10px -8px rgba(0,0,0,0.5);
+}
+
+header .d-flex{
+  justify-content: center;/* flexアイテムの横の配置指定 */
+}
+
+.logo{
+  background: #fff;
+  margin-right: 50px;
+  width: 23%;
+  padding: 0 15px;/* ロゴを正方形に見せるため */
+}
+
+.top_heading{
+  font-size: 45px;
+  font-weight: bold;/* 文字を太く */
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;/* 文字に影をつける3つの数値は横位置、縦位置、影の大きさ */
+}
+
+.middle_heading{
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;/* 文字に影をつける3つの数値は横位置、縦位置、影の大きさ */
+}
+
+.middle_heading{
+  height:60px;
+  font-weight: bold;/* 文字を太く */
+  text-align:center;
+  position:relative;
+}
+
+hr { /* 白い罫線 */
+    height: 10px;
+
+    background-color: #FFFFFF;
+    border: none;
+    box-shadow: 0 0 8px gray;
+}
+
+.middle_heading2{  /* 現在NFT市場は～の長文*/
+  font-weight: bold;/* 文字を太く */
+  font-size: 20px;
+  color: #fff;
+  text-align:center;
+  text-shadow: 1px 1px 3px #000;/* 文字に影をつける3つの数値は横位置、縦位置、影の大きさ */
+  padding-right:100px;
+  padding-left:100px;
+  margin-bottom:20px;
+}
+
+.box-wrap{
+  justify-content: space-around;/*flexアイテムの横場所指定*/
+  margin: 0 auto 50px;
+}
+
+.box {
+  width: 43%;
+  background-color: #32343D;/* 背景色指定 */
+  padding:  50px;/* 余白指定 */
+  position: relative;
+  color:  #fff;/* 文字色 */
+  padding-top: 60px;
+  font-size: 30px;
+  font-weight: bold;
+  box-shadow: 0px 10px 10px -8px rgba(0,0,0,0.5);
+}
+
+.no { /* ①、② */
+  font-weight: bold;/* 文字を太く */
+  font-size: 35px;
+  text-shadow: 1px 1px 5px #000;/* 文字に影をつける3つの数値は横位置、縦位置、影の大きさ */
+  position: absolute;/*下の値に指定した絶対配置 */
+  top: 0;
+  left: 0;
+  padding: 0 10px;
+  background: #574D4D;
+}
+
+.token{
+  font-weight: bold;/* 文字を太く */
+  font-size: 20px;
+  color: #fff;
+  text-align:center;
+  background-color: #32343D;
+  box-shadow: 0px 10px 10px -8px rgba(0,0,0,0.5);
+  margin:0px auto;
+  margin-bottom: 10px;
+}
+
+.flow{
+  padding-top:0%;
+  margin: auto;
+  height: 500px;
+  background: #ffffff;
+  color: #E410D5;
+  font-size: 12px;
+  font-weight:bold;
+  padding-bottom:0%;
+  margin: 0px auto 50px;
+  padding: 3% 5%;
+}
+
+.flowbox3 {
+    display: flex;
+}
+
+.flow-contents-text1{
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  top: 45px;
+  left: 75px;
+}
+
+.flow-contents-text2{
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  left: 345px;
+  top: 45px;
+}
+
+.flow-contents-text3{
+  position: relative;
+  left: 490px;
+  top: 73px;
+}
+
+.flow-contents-text4{
+  color: black;
+  position: relative;
+  font-weight: bold;
+  left: 700px;
+  bottom: 160px;
+}
+
+.flow-contents-text5{
+  font-weight: normal;
+  font-size: 80%;
+  text-align: right;
+  left: 620px;
+  bottom: 10px;
+}
+
+.flow2{
+  height: 450px;
+  background: #ffffff;
+  color: #E410D5;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0px auto 50px;
+  padding: 5% 5%;
+}
+
+.flow-contents{
+  padding-top:2%;
+  padding-bottom:0%;
+}
+
+.flowbox1{
+  float:left;
+  position: relative;
+  left: 30px;
+  bottom: 50px;
+}
+
+.flowbox2{
+  float:right;
+  padding-right: 30%;
+  position: relative;
+  bottom: 50px;
+}
+
+.contents-text1{
+  margin-top: 0%;
+  margin-bottom: 1%;
+}
+
+.contents-text2{
+  margin-top: 5%;
+}
+
+.contents-text3{
+  margin-top: 0%;
+  margin-bottom: 1%;
+}
+
+.contents-text4{
+  margin-top: 5%;
+}
+
+.token2{
+  font-weight: bold;/* 文字を太く */
+  font-size: 120%;
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;/* 文字に影をつける3つの数値は横位置、縦位置、影の大きさ */
+  background-color: #32343D;
+  width: 82%;                 /* 幅指定 */
+  text-align:left;
+  margin: 0px auto 50px;
+  padding: 2%;
+  box-shadow: 0px 10px 10px -8px rgba(0,0,0,0.5);
+}
+
+.margin{
+  height: 15px;
+}
+
+.header_bg2{
+  background: url('../img/Idol Market.png') no-repeat;/* no-repeatは背景画像を繰り返さない */
+  background-size: cover;/* 背景画像を要素いっぱいに広げる */
+  display: flex;
+  padding: 350px 0;
+  box-shadow: 0px 10px 10px -8px rgba(0,0,0,0.5);
+}
+
+.middle_heading3{
+  text-shadow: 1px 1px 3px #000;/* 文字に影をつける3つの数値は横位置、縦位置、影の大きさ */
+  font-size: 120%;
+  color: #fff;
+  text-align: center;
+  padding-top: 15px;
+  height:60px;
+  font-weight: bold;/* 文字を太く */
+  position: relative;
+}
+
+.middle_heading4{
+  /*width:0%;  /*  横幅を割合で指定 */
+  /*height: 0;  /* 高さは自動指定 */
+}
+
+.header_bg3{
+  background: url('../img/Number And Roadmap.png') no-repeat;/* no-repeatは背景画像を繰り返さない */
+  background-size: cover;/* 背景画像を要素いっぱいに広げる */
+  padding: 100px 0;
+  margin: 0px auto 50px;
+  box-shadow: 0px 10px 10px -8px rgba(0,0,0,0.5);
+}
+
+.flowlast{
+  display: flex;
+  height: 100px;
+  background: #d9edf7;
+  justify-content: center;/*flexアイテムの横位置指定*/
+  align-items: center;/*flexアイテムの縦位置指定*/
+  text-decoration: none;
+}
+
+.flowlast:hover{
+  text-decoration: underline;
+}
+
+.flowlast-text{
+  margin-left: 8px;
+  font-weight: bold;/* 文字を太く */
+  font-size: 25px;
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;/* 文字に影をつける3つの数値は横位置、縦位置、影の大きさ */
+}
+
+.ranking{
+  /* width: 70%; */
+  /* margin: 0 auto; */
+  /* float: right; */
+  width: 40%;
+  margin: 0 auto;
+  float: right;
+  /* padding-top: 2%; */
+  padding-right: 5%;
+  /* padding-bottom: 10%; */
+}
+
+.idol-text{
+  width: 70%;
+  color: black;
+  /* float: left; */
+  color: black;
+  width: 50%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+}
+
+.pdf{
+  display: flex;
+  width: 70px;
+  height: 90px;
+}
+
+.copy{
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.header_bg3-text{
+  font-weight: bold;/* 文字を太く */
+  font-size: 30px;
+  color: #E410D5;
+  padding-left: 100px;
+}
+.header_bg3-text_1{
+  margin: 0px 0;
+}
+
+.header_bg3-text_2{
+  margin-top: 2px;
+  margin-bottom: 50px;
+}
+
+.Companies{
+  width: 90%;
+  padding-left: 10%;
+}
+
+/* 【質問1】class名を分かりやすくするコツは？どんどん増え続けるので */
+    /* →不要なクラスは作らない　増えるは越したことは無い　文書構造をしっかりしたうえでClass付けする　/*
+
+/* 【質問2】教えていただいた、<div class="〇〇〇〇">に、 <p class="△△△">ほげほげ</p>を囲う方法ですが、同じく<div で囲わないのはなぜですか？特定の状況下で分ける必要があるのでしょうか？ */
+    /* →文章構造上でいうと<p>は段落のため　<div>はただの箱
+
+/* 【質問3】派生しての質問です、 その<div class=　以外にも<h1 class=　とかも、classの設定で見受けられますが、それの使い分ける差を知りたいです
+    /* →上記の文書構造の理解をする　その上で　h1は文書のTOP見出し　h2は小見出し　h3はさらに小さな見出し　Pは段落…というように使う　SEO観点
+
+/* 【質問4】①がしっくり中央に来ません、いろいろ試しましたが、中心にいくような設定ありますでしょうか？ */
+    /* →微調整していただき解決
+
+/* 【質問5】急にCSSが効かなくなった「.token{」検証ツールでCSSをみたら、設定してない項目がある？
+    /* →上より下に来るほどClassの効きは強くなる/*
+    /* →具体的な指定方法ほどClassの効きは強くなる/*
+
+/* 【質問6】なぜか<p>タグによる改行が出来なくなった
+    /* →<p>タグそれ自体は、本来（このツールも）改行できない　改行セットできるのはブログツールに備わっている場合のコード環境のみ
+
+/*  その他
+    /* →インデントは必ず分かりやすくそろえる　突っ返される場合も　見て分かりやすいため　改行もしない
+    /* →シフト＋タブキーで左に戻る
+    /* →空白入れる場合は margin-bottom: 〇〇px;で　不要にマージン専用のCSSは挟まないほうが。
+    /* →提出したものはheaderがしまってなかった　変に効いていた
+    /* →Cssは継承といって入れ子の中のものも効くようになっている
+
+/* 2022/2/1 オンラインサポート
+/* <div>タグ→コンピュータに対して「単なるブロック」と認識させるく */
+/* <p>タグ→コンピュータに対して「本文」と認識させる */
+/* <p>タグ→コンピュータに対して「本文」と認識させる */
+/* <p>タグの中に<p>タグを入れ子にするのはNG
+/* --------------------------------------------
+/* <p class="contents-tex2"> */
+/*         <p>【コンテンツの展望】</p> */
+/*        <p>強力なコンテンツでスタートできれば</p> */
+/*         <p>流動性が確保された市場へ</p> */
+/*         <p>コンテンツホルダーが集中するため</p> */
+/*         <p>結果として市場は急速に成長する</p> */
+/*</p> */
